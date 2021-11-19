@@ -1,0 +1,252 @@
+body {
+    font-family: Poppins, Verdana, Geneva, sans-serif;
+    
+    background-color: #B1e0f3; /* Blizzard Blue */
+    padding: 1rem;
+    margin: auto;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*mi-height : 100vh */
+}
+
+.resume-container {
+    position: relative;
+    background-color: aliceblue;
+    align-items: center;
+    box-shadow: 0 12px 28px 0 rgba(0, 0, 0, 0.2), 0 2px 4px 0 rgba(0, 0, 0, 0.1),inset 0 0 0 1px rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    display : grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 50px;
+    /* width, max-width, min-height */
+}
+
+.resume-container .left-container {
+    /* #003147 */
+    /*    background: linear-gradient(to top, rgba(50,63,115,1) 0%, rgba(0,49,71,1) 100%);*/
+    background-color: #003147;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 40px;
+}
+
+.Profile_Left {
+    align-items: center;
+    color: aliceblue;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.Profile_Left .img_flex {
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+}
+
+.Profile_Left h2 {
+    color: aliceblue;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.5em;
+}
+
+.Profile_Left h2 span {
+    font-size: 0.7em;
+    font-weight: 300;
+}
+
+.headline {
+    color: aliceblue;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 20px;
+    font-size: 1.0em;
+}
+
+.Contact_Info ul {
+    position: relative;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.Contact_Info ul li {
+    list-style: none;
+    position: relative;
+    margin: 10px 0;
+}
+
+.Contact_Info ul li span {
+    color: aliceblue;
+    font-weight: 300;
+}
+
+i {
+    margin-right: 10px;
+}
+
+.Contact_Info ul li .icon {
+    display: inline-block;
+    width: 30px;
+    color : aliceblue;
+    font-size: 18px;
+}
+
+.Contact_Info ul li .contact-data a {
+    color : aliceblue;
+    text-decoration: none;
+}
+
+.Contact_Info ul li .contact-data a:hover {
+    color: yellow;
+}
+
+/*.sk-info {
+    padding: 25px;
+    cursor: pointer;
+}
+.skill {
+    display: inline-block;
+    width: 100px;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    color: aliceblue;
+    text-align: center;
+    background-color: #ff4757;
+    border-radius: 0.5rem;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}*/
+
+.skill-container .skills {
+    position: relative;
+    padding: 15px 20px;
+    background: rgba(0,0,0,0.1);
+    margin: 10px 0;
+    border : 1px solid rgba(255,255,255,0.1);
+    border-radius: 10px;
+    
+}
+
+.skill-container .skills h4 {
+    margin: 0;
+    padding: 0;
+    color: aliceblue;
+    float: left;
+}
+
+.skill-container .skills .bar {
+    position: relative;
+    width: 100%;
+    height: 2px;
+    background: #041c40;
+    margin: 15px 0 10px;
+}
+
+.skill-container .skills .bar .progress {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width : 80%;
+    height: 100%;
+    background : linear-gradient(to right, #00327b, #2b80ff);
+    
+}
+
+.skill-container .skills .bar .progress:before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    right: 0;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0 0 24px rgba(41,123,247,1);
+}
+
+/* RIGHT SIDE */
+.resume-container .right-container {
+    padding: 40px;
+    border-radius: 10px;
+    position: relative;
+    background-color: aliceblue;
+}
+
+.Profile_About {
+    margin-bottom: 50px;
+}
+
+.Profile_About:last-child {
+    margin-bottom: 0;
+} 
+
+.Profile_About h2 {
+    color: #003147;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+table {
+    border-collapse: collapse;
+    box-shadow: 0 5px 10px #e1e5ee;
+    background-color: white;
+    overflow: hidden;
+    width: 100%;
+    text-align: left;
+    border-radius: 10px;
+}
+
+thead {
+    box-shadow: 0 5px 10px #e1e5ee;
+}
+
+th {
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-size: 0.9rem;
+    font-weight: 900;
+}
+
+td {
+    padding: 1rem 2rem;
+}
+
+/* To Alternatively show the colors in the table */
+tr:nth-child(even) {
+    background-color: #f4f6fb;
+}
+
+.hobbies ul {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.hobbies ul li {
+    list-style: none;
+    font-weight: 500;
+}
+
+.hobbies ul li .fa {
+    color: #003147;
+}
+
+.Language ul li {
+    list-style: none;
+}
+
+.Language ul li span {
+    color: #03a9f4;
+}

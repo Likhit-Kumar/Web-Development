@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Validation using JS</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Validation Form Using JavaScript</h2>
+        </div>
+        <form id="form" class="form">
+            <div class="form-cont">
+                <label for="FirstName">First Name</label>
+                <input id="FirstName" type="text" placeholder="Enter First Name">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error Message</small>
+            </div>
+
+            <div class="form-cont">
+                <label for="LastName">Last Name</label>
+                <input id="LastName" type="text" placeholder="Enter Last Name">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error Message</small>
+            </div>
+
+            <div class="form-cont">
+                <label for="Username">User Name</label>
+                <input id="Username" type="text" placeholder="Enter a Username">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error Message</small>    
+            </div>
+            <div class="form-cont">
+                <label for="Date">Date of Birth</label>
+                <input id="Date" type="text" placeholder='MM-DD-YYYY'>
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error Message</small>
+            </div>
+            <div class="form-cont">
+                <label for="Email">Email Id</label>
+                <input id="Email" type="email" placeholder="Enter an Email ID">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error Message</small>
+            </div>
+            <div class="form-cont">
+                <label for="Password">Password</label>
+                <input id="Password" type="password" placeholder="Enter a Password">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error Message</small>
+            </div>
+            <div class="form-cont">
+                <label for="confirm Password">Confirm Password</label>
+                <input id="Confirm Password" type="password" placeholder="Confirm Password">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error Message</small>
+            </div>
+            <button><span>Submit</span></button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Shopping Website Using HTML, CSS, JS</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='lightslider.css'>
+
+    <script type="text/javascript" src="script.js"></script>
+
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');    
+		body{
+			font-family:poppins;
+		}
+	</style>
+	
+</head>
+<!-- Excluding Search Bar Login/SignUp Form -->
+<body>
+    <nav> 
+        <div class="navigation">
+            <div class="title">
+                <h2 class="logo">Shop<span>Ping</span></h2>
+            </div>
+
+            <ul class="menu" style="padding-inline-start: 0px;">
+                <li><a href="#">Home</a></li>
+                <li class="shop"><a href="#" >Shop</a></li>
+                <li><a href="#">Electronics</a></li>
+                <li><a href="#">Fashion</a></li>
+                <li><a href="#">Sports</a></li>
+            </ul>
+
+            <div class="right-menu">
+                <a href="cart.html">
+                    <i class="fas fa-shopping-cart">
+                        <span class="num-cart-product">0</span>
+                    </i>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- <div class="image">
+            <img src="https://i.ebayimg.com/images/g/aMkAAOSwvmphA5Sb/s-l1600.jpg" class="img-st"  style="margin-top: 25px;">
+            <h3 style="margin-top: 50px;">OnePlus Nord 2</h3>
+            <h3>$450.00</h3>
+            <a href="#" class="add-cart cart1">Add cart</a>
+            <input type="hidden" value="450"/>
+        </div>
+        <div class="image">
+            <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-12-pro-max-blue-hero?wid=470&hei=556&fmt=png-alpha&.v=1604021658000" class="img-st">
+            <h3 style="margin-top: 25px;">Apple iPhone 12 Pro</h3>
+            <h3>$1200.00</h3>
+            <a href="#" class="add-cart cart2">Add cart</a>
+            <input type="hidden" value="700"/>
+        </div>
+        <div class="image">
+            <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRK6etXoyWCtoC22Kf7TzQO6AO6q2TVYdxNSKvGLvg6B8Mw5vOJsldAcyrsb7awZhiVHxh4Vi89mSj-g9-HkueweJpGv0py" class="img-st"  style="margin-top: 25px;">
+            <h3 style="margin-top: 50px;">Sony PlayStation 5</h3>
+            <h3>$675.00</h3>
+            <a href="#" class="add-cart cart3">Add cart</a>
+            <input type="hidden" value="675"/>
+        </div>
+        <div class="image">
+            <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mbp-spacegray-select-202011?wid=1280&hei=1190&fmt=jpeg&qlt=80&.v=1613672894000" class="img-st"  style="margin-top: 25px;">
+            <h3 style="margin-top: 60px;">Apple MacBook Pro</h3>
+            <h3>$1,299.00</h3>
+            <a href="#" class="add-cart cart4">Add cart</a>
+            <input type="hidden" value="1299"/>
+        </div>
+        <div class="image">
+            <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MX7Y2_VW_34FR+watch-40-alum-spacegray-nc-nike6s_VW_34FR_WF_CO?wid=700&hei=700&trim=1,0&fmt=p-jpg&qlt=95&.v=1566450097993,1618340423000" class="img-st"  style="margin-top: 25px;">
+            <h3>Apple iWatch</h3>
+            <h3>$700</h3>
+            <a href="#" class="add-cart cart5">Add cart</a>
+            <input type="hidden" value="700"/>
+        </div>
+        <div class="image">
+            <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MRXJ2?wid=572&hei=572&fmt=jpeg&qlt=95&.v=1551489675083" class="img-st"  style="margin-top: 25px;">
+            <h3>Apple AirPods</h3>
+            <h3>$199.00</h3>
+            <a href="#" class="add-cart cart6">Add cart</a>
+            <input type="hidden" value="199"/>
+        </div>
+        <div class="image">
+            <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/airpods-max-select-silver-202011?wid=470&hei=556&fmt=png-alpha&.v=1604021221000" class="img-st"  style="margin-top: 25px;">
+            <h3>Apple AirPods Max</h3>
+            <h3>$549.00</h3>
+            <a href="#" class="add-cart cart7">Add cart</a>
+            <input type="hidden" value="549"/>
+        </div>
+
+        <div class="image">
+            <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTPtKuc0P_m8Xd1plxjgwb4NfdYf6_40lNWwWnTVB96aDdS_aGlYRwiJ6MrCGa3rlbvSWZ7Tuwj8Kko58AcK8YluiJo72ce" class="img-st"  style="margin-top: 25px;">
+            <h3>OnePlus 9R</h3>
+            <h3>$539.00</h3>
+            <a href="#" class="add-cart cart8">Add cart</a>
+            <input type="hidden" value="539"/>
+        </div> -->
+        
+        <div class="card-cont">
+            <div class="image1">
+              <img src="img/1.png" alt="sq-sample4"/>
+              <a href="#" class="add-to-cart ">Add to Cart</a>
+              <input type="hidden" value="680"/>
+            </div>
+            <div class="fig-cap">
+              <h2>Sony PlayStation 5</h2>
+              <p>Sony PlayStation 5 · HDD 825GB PCie Gen 4 NVMe SSD · Graphics Custom AMD RDNA 2 GPU 36 CUs.</p>
+              <p class="price">$675.00 </p>
+            </div>
+        </div>
+
+        <div class="card-cont">
+            <div class="image1">
+              <img src="img/2.png" alt="sq-sample4"/>
+              <a href="#" class="add-to-cart">Add to Cart</a>
+            </div>
+            <div class="fig-cap">
+              <h2>Apple iPhone 12 Pro</h2>
+              <p>iPhone 12 delivers 4G LTE at up to 2Gbps, upload photos and stream high-quality video even faster.</p>
+              <p class="price">$1200.00 </p>
+            </div>
+        </div>
+
+        <div class="card-cont">
+            <div class="image1">
+              <img src="img/3.png" alt="sq-sample4"/>
+              <a href="#" class="add-to-cart">Add to Cart</a>
+            </div>
+            <div class="fig-cap">
+              <h2>OnePlus Nord 2</h2>
+              <p>OnePlus Nord 2 5G · Released 2021, July 28 · 189g, 8.3mm thickness · Android 11, OxygenOS 11.3</p>
+              <p class="price">$450.00 </p>
+            </div>
+        </div>
+
+        <div class="card-cont">
+            <div class="image1">
+              <img src="img/4.png" alt="sq-sample4"/>
+              <a href="#" class="add-to-cart">Add to Cart</a>
+            </div>
+            <div class="fig-cap">
+              <h2>Apple MacBook Pro</h2>
+              <p>Apple MacBook Pro (13.3-inch/33.78 cm, Apple M1 chip with 8‑core CPU and 8‑core GPU, 8GB RAM,</p>
+              <p class="price">$1299.00 </p>
+            </div>
+        </div>
+
+        <div class="card-cont">
+            <div class="image1">
+              <img src="img/8.png" alt="sq-sample4"/>
+              <a href="#" class="add-to-cart">Add to Cart</a>
+            </div>
+            <div class="fig-cap">
+              <h2>OnePlus 9R</h2>
+              <p>OnePlus 9R · Released 2021, April 14 · 189g, 8.4mm thickness · Android 11, OxygenOS 11.2.4.4 ·</p>
+              <p class="price">$539.00 </p>
+            </div>
+        </div>
+
+        <div class="card-cont">
+            <div class="image1">
+              <img src="img/5.png" alt="sq-sample4"/>
+              <a href="#" class="add-to-cart">Add to Cart</a>
+            </div>
+            <div class="fig-cap">
+              <h2>Apple iWatch</h2>
+              <p>Apple Watch Series 6 · 44mm or 40mm case size · Always-On Retina display · — · GPS + Cellular⁴ · GPS ·</p>
+              <p class="price">$700.00 </p>
+            </div>
+        </div>
+
+        <div class="card-cont">
+            <div class="image1">
+              <img src="img/6.png" alt="sq-sample4"/>
+              <a href="#" class="add-to-cart">Add to Cart</a>
+            </div>
+            <div class="fig-cap">
+              <h2>Apple AirPods</h2>
+              <p>AirPods deliver an unparalleled listening experience with all your devices. Every model connects</p>
+              <p class="price">$199.00 </p>
+            </div>
+        </div>
+
+        <div class="card-cont">
+            <div class="image1">
+              <img src="img/7.png" alt="sq-sample4"/>
+              <a href="#" class="add-to-cart">Add to Cart</a>
+            </div>
+            <div class="fig-cap">
+              <h2>Apple AirPods Max</h2>
+              <p>Up to 20 hours of listening time on a single charge with Active Noise Cancellation or Transparency mode</p>
+              <p class="price">$549.00 </p>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+    <script crossorigin="anonymous" src="https://kit.fontawesome.com/c8e4d183c2.js"></script>  
+</body>
+</html>

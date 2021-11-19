@@ -1,0 +1,26 @@
+body {
+  margin: 0; /* Removes any margin so anything within the body fills the space */
+}
+
+/* Box that will follow the mouse around */
+#box {
+  position: absolute; /* Allows us to move it around */
+  color: #FFF; /* Makes the text white */
+  font-size: 24px; /* Makes the box text larger (24 pixels tall) */
+  transition: ease-out 1s; /* Gives a smooth movement following the box, s for seconds. Feel free to increase lower */
+}
+
+/* Rotating box that will spin in the middle */
+#rbox {
+  position: absolute; /* Allows us to move it around */
+  width: 50px; /* Size with width/height */
+  height: 50px;
+  background-color: #FFF; /* Makes the background white, if removed its transparent. If all are the same you can write just 3, but otherwise hexagon letter/numbers come in 6 */
+  /* When talking RGB colour, 0 or 00 gives no colour (black) while 255 or FF is full colour */
+  /* RGB: For red #FF0000 , green is #00FF00 , and blue is #0000FF. Inbetween these you can mix and match*/
+ /* Use to find specific colours you like https://www.w3schools.com/colors/colors_picker.asp */
+  
+  color: #000; /* Text in the box is black */
+  text-align: center; /* Puts the text in middle  */
+  font-size: 36px; /* Text size, fits the size we set above */
+}

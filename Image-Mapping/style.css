@@ -1,0 +1,21 @@
+body {
+	font-family: Helvetica, sans-serif;
+	font-size: 20px;
+	background: #ece9e9;
+	color: #000;
+}
+
+main {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 10vh;
+	/* padding: 3rem; */
+}
+
+.card {
+	display: flex;
+	position: relative;
+	overflow: hidden;
+	border-radius: 10px;
+}

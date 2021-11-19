@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "977076897302",
+    "project_id": "push-notification-flutte-cb039",
+    "storage_bucket": "push-notification-flutte-cb039.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:977076897302:android:9b7356111c2b92c4f11737",
+        "android_client_info": {
+          "package_name": "com.example.notify_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "977076897302-pcklo7qvc9folvmq1f5ghol8t2p2c39u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCC4JrKUM_EW-ViVzRggatx7aGpptjsUxI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "977076897302-pcklo7qvc9folvmq1f5ghol8t2p2c39u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
